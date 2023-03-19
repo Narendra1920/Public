@@ -1,0 +1,78 @@
+body {
+  background: white;
+}
+.beforeTransition {
+  float: left;
+  padding: 20px;
+}
+.a {
+  position: absolute;
+  border-radius: 20px;
+  width: 202vh;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  height: 200vh;
+}
+.transition {
+  float: left;
+  border-radius: 20px;
+  position: relative;
+  opacity: 0;
+  height: 200vh;
+  width: 202vh;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  transition: opacity 1s ease-out;
+}
+.transition:hover {
+  opacity: 1;
+}
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 200;
+  color: black;
+  text-align: center;
+  line-height: 90vh;
+}
+
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: -10;
+  color: black;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+.header{
+  background-color: #787272;
+  color: white;
+  display: flex;
+  height: 5vh;
+width: 118vh;
+
+
+border-radius: 0px;
+padding: 3vh 0px 0px 90vh;
+
+}
